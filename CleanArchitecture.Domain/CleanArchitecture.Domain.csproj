@@ -7,8 +7,23 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Todo\" />
-      <Folder Include="User\" />
+      <Folder Include="Todo\DomainEvents\" />
+      <Folder Include="Todo\Entities\" />
+      <Folder Include="Todo\ValueObjects\" />
+      <Folder Include="User\DomainEvents\" />
+      <Folder Include="User\Entities\" />
+      <Folder Include="User\ValueObjects\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="MediatR.Contracts">
+        <HintPath>..\..\..\.nuget\packages\mediatr.contracts\2.0.1\lib\netstandard2.0\MediatR.Contracts.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CSharpFunctionalExtensions" Version="2.41.0" />
+      <PackageReference Include="MediatR" Version="12.2.0" />
     </ItemGroup>
 
 </Project>
